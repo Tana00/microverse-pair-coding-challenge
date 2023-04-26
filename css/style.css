@@ -5,14 +5,14 @@ body {
 }
 
 #navbar {
-  /* background-color:rgb(17, 19, 61); */
-  background-color: "#45567d";
+  background-color: rgb(17, 19, 61);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  padding: 1rem 0;
 }
 #navbar-li {
   display: flex;
@@ -27,7 +27,7 @@ a {
   font-size: 1.3em;
   padding: 1rem;
 }
-a:hover {
+#navbar a:hover {
   background-color: rgb(24, 82, 77);
 }
 #welcome-section {
@@ -54,7 +54,7 @@ h1 {
   font-weight: 100;
 }
 
-#project {
+#projects {
   margin: 0;
   padding: 10rem 2rem;
   text-align: center;
@@ -66,7 +66,7 @@ h2 {
   color: #2b5b70;
 }
 .project-image {
-  height: calc(100% - 4.8);
+  height: calc(100% - 4rem);
   width: 100%;
   object-fit: cover;
 }
@@ -108,18 +108,33 @@ h2 {
   font-size: 1.4rem;
 }
 
-#contact-links {
-  display: inline-block;
-  flex-direction: row;
+.contact-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
-#contact-links > img {
+.contact-links a {
+  text-align: center;
+}
+
+.contact-links > img {
   padding: 20px;
   font-size: 30px;
   width: 30px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
+}
+
+.contact-links .facebook_icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.contact-links a p {
+  display: none;
 }
 
 @media (max-width: 480px) {
