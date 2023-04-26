@@ -1,142 +1,130 @@
-
-
-body{
-    font-family: 'Poppins', 'Helvetica', 'sans-serif';
-    margin: 0;
-    padding: 0;
+body {
+  font-family: "Poppins", "Helvetica", "sans-serif";
+  margin: 0;
+  padding: 0;
 }
 
 #navbar {
-    background-color:rgb(17, 19, 61);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-
+  /* background-color:rgb(17, 19, 61); */
+  background-color: "#45567d";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
-#navbar-li{
-    display: flex;
-    flex-direction: row;
-    
+#navbar-li {
+  display: flex;
+  flex-direction: row;
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-a{
-    color: rgb(160, 231, 155);
-    text-decoration: none;
-    font-size: 1.3em;
-    padding: 1rem;
+a {
+  color: rgb(160, 231, 155);
+  text-decoration: none;
+  font-size: 1.3em;
+  padding: 1rem;
 }
-a:hover{
-    background-color: rgb(24, 82, 77);   
-
+a:hover {
+  background-color: rgb(24, 82, 77);
 }
-
-#welcome-section{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #140524;
-    background-image: linear-gradient(
-        62deg, #0f0510 0%, #150332 100%
-    );
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #140524;
+  background-image: linear-gradient(62deg, #0f0510 0%, #150332 100%);
 }
 
 h1 {
-    color: rgb(119, 178, 229);
-    font-size: 2.4rem;
-    font-weight: 700;
+  color: rgb(119, 178, 229);
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 #welcome-section > p {
-    font-size: 1.4rem;
-    font-style: italic;
-    color: #154f67;
-    font-weight: 100;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #154f67;
+  font-weight: 100;
 }
 
 #project {
-    margin: 0;
-    padding: 10rem  2rem;
-    text-align: center;
-    background-color: #25113b;
-
+  margin: 0;
+  padding: 10rem 2rem;
+  text-align: center;
+  background-color: #25113b;
 }
 
 h2 {
-    font-size: 2.4rem;
-    color: #2b5b70;
+  font-size: 2.4rem;
+  color: #2b5b70;
 }
 .project-image {
-    height: calc(100% - 4.8);
-    width: 100%;
-    object-fit:cover ;
+  height: calc(100% - 4.8);
+  width: 100%;
+  object-fit: cover;
 }
-.project-tile{
-    color: cadetblue;
-    width: 100%;
-    background-color: #381f5a;
-    padding: 2rem 0;
-    margin: 0;
+.project-tile {
+  color: cadetblue;
+  width: 100%;
+  background-color: #381f5a;
+  padding: 2rem 0;
+  margin: 0;
 }
-.project > a:hover{
-    background-color: none;   
-
+.project > a:hover {
+  background-color: none;
 }
-.project-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    grid-gap: 4rem;
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    margin-bottom: 6rem;
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
 }
 
 #contact {
-    background-color: #7d6384;
-    width: 100%;
-    height: 100vh;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: #7d6384;
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact p {
-    color: #372239;
-    font-style: italic;
-    text-align: center;
-    font-size: 1.4rem;
+  color: #372239;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.4rem;
 }
 
-#contact-links{
-    display: inline-block;
-    flex-direction: row;
+#contact-links {
+  display: inline-block;
+  flex-direction: row;
 }
 
-#contact-links > img{
-        padding: 20px;
-        font-size: 30px;
-        width: 30px;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 50%;
+#contact-links > img {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
 }
 
-@media screen  and (max-width: 480px){
-    h1 {
-        color: rgb(119, 178, 229);
-        font-size: 2rem;
-        font-weight: 500;
-    }
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
 }
-
-
